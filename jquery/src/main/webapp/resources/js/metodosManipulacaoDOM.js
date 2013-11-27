@@ -43,3 +43,9 @@ $(document).ready(function() {
 		$('#remover').removeAttr('id');
 	});
 });
+
+$(document).ready(function() {
+	$('#adicionar').click(function() {
+		$('p').addClass('minha_classe');
+	});
+});
