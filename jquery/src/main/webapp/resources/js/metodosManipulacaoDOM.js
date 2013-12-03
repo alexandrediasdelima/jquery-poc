@@ -49,3 +49,16 @@ $(document).ready(function() {
 		$('p').addClass('minha_classe');
 	});
 });
+
+$(document).ready(function() {
+	$('#toggle').click(function() {
+		$('p').toggleClass('toggleRemover');
+	});
+
+});	
+$(document).ready(function() {
+	$('#html').click(function() {
+		var conteudoHtml = $('p').html();
+		$('span').css('display', 'block').text(conteudoHtml);
+		});
+});
