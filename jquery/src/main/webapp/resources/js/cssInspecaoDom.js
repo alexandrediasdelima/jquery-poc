@@ -21,7 +21,6 @@ $(document).ready(
 		function() {
 			$('#coordenadas').click(
 					function() {
-						alert("passou");
 						var cordenadas = $('.coordenadas').offset();
 						alert(cordenadas);
 						$('#spanHelp').html(
@@ -56,3 +55,24 @@ $(document)
 						$('span').empty();
 					});
 				});
+
+$(document).ready(function() {
+	$('#filter').click(function() {
+		
+		$('p').filter('.alvo').css('color','red');
+	});
+});
+
+$(document).ready(function() {
+	$('#not').click(function() {
+		$('p').not('.alvo').css('color','red');
+	});
+});
+
+$(document).ready(function() {
+	$('#slice').click(function() {
+		$('div').slice(1,5).css('backgroundColor','#ff0');
+	});
+});
+
+
